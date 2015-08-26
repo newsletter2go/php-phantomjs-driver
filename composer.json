@@ -1,0 +1,23 @@
+{
+    "name": "hielsnoppe/php-phantomjs-driver",
+    "type": "library",
+    "description": "",
+    "keywords": [ "phantomjs" ],
+    "homepage": "https://github.com/hielsnoppe/php-phantomjs-driver",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Niels Hoppe",
+            "homepage": "http://www.nielshoppe.de",
+            "role": "Lead Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "NielsHoppe\\PhantomJS\\" : "lib/"
+        }
+    },
+    "support": {
+        "source": "https://github.com/hielsnoppe/php-phantomjs-driver"
+    }
+}
