@@ -19,7 +19,7 @@ class PhantomDriver {
 
     public function start ($script) {
 
-        $this->process->start();
+        $this->process->start($script);
     }
 
     public function stop () {
@@ -41,7 +41,7 @@ class PhantomDriver {
 
     public function screenshot ($inFile, $outFile) {
 
-        $imageBase64 = $this->process("$inFile\n");
+        $imageBase64 = $this->process($inFile);
         $image = base64_decode($imageBase64);
 
         file_put_contents($outFile, $image);

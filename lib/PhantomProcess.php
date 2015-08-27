@@ -62,7 +62,7 @@ class PhantomProcess {
         }
 
         // send URL to PhantomJS process
-        if (fwrite($this->pipes[0], "$url\n") === false) {
+        if (fwrite($this->pipes[0], "$message\n") === false) {
 
             throw new \Exception('Message not sent for unknown reason.');
         }
