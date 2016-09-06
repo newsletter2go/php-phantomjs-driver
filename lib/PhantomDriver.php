@@ -27,35 +27,11 @@ class PhantomDriver {
         return $this->process->stop();
     }
 
-    /**
-     * @deprecated
-     */
-
-    public function process ($url) {
-
-        $result = $this->process->send($url);
-
-        return $result;
-    }
-
-    public function request ($command, $args) {
+    public function request ($command, $args = array()) {
 
         $message = sprintf('%s %s', $command, implode(' ', $args));
         $result = $this->process->send($message);
 
         return $result;
-    }
-
-    /**
-     * convenience method; not intended for public use
-     * @deprecated
-     */
-
-    public function screenshot ($inFile, $outFile) {
-
-        $imageBase64 = $this->process($inFile);
-        $image = base64_decode($imageBase64);
-
-        file_put_contents($outFile, $image);
     }
 }
