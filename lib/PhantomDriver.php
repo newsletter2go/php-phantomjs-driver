@@ -27,9 +27,21 @@ class PhantomDriver {
         return $this->process->stop();
     }
 
+    /**
+     * @deprecated
+     */
+
     public function process ($url) {
 
         $result = $this->process->send($url);
+
+        return $result;
+    }
+
+    public function request ($command, $args) {
+
+        $message = sprintf('%s %s', $command, implode(' ', $args));
+        $result = $this->process->send($message);
 
         return $result;
     }
