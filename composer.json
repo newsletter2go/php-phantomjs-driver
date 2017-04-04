@@ -1,5 +1,9 @@
 {
-    "name": "hielsnoppe/php-phantomjs-driver",
+    "name": "newsletter2go/php-phantomjs-driver",
+    "replace": {
+        "hielsnoppe/php-phantomjs-driver": "master"
+    },
+    "version": "0.0.1",
     "type": "library",
     "description": "",
     "keywords": [ "phantomjs" ],
