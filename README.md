@@ -19,7 +19,7 @@ To install this library via [Composer](http://getcomposer.org) add the following
         }
     ],
     "require": {
-        "hielsnoppe/php-phantomjs-driver": "master"
+        "hielsnoppe/php-phantomjs-driver": "0.0.1"
     }
 }
 ```
